@@ -1,0 +1,96 @@
+page-user-modal {
+
+    .toolbar-background {
+        background: #ffffff;
+    }
+
+    .ion-ios-arrow-back {
+        color: #1B9AF7;
+    }
+
+    ion-buttons {
+      .bar-buttons-md {
+        font-size: 22px;
+      }
+    }
+    .ion-ios-close {
+      color: black;
+      font-size: 36px;
+      font-weight: bolder;
+    }
+
+    .red-color{
+        color: red;
+    }
+    .page-user-modal{
+        background: #ffffff;
+
+      .scroll-content {
+        padding: 0 !important;
+
+        .content_box {
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+
+          .modal-box {
+          height: 45vh;
+          background: lightgray;
+          position: relative;
+            .camera_box {
+              position: absolute;
+              bottom: 0;
+              padding: 8px 11px;
+              background: white;
+              margin: 10px;
+              border-radius: 50%;
+              .icon {
+                font-size: 35px;
+              }
+            }
+
+        }
+          .modal-scroll-list {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            .shapes {
+              padding: 10px;
+              width: 30%;
+              float: left;
+              flex: 0 0 auto;
+            }
+          }
+          .modal-adjust-list {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            .sizes {
+              padding: 10px;
+              width: 20%;
+              float: left;
+              flex: 0 0 auto;
+            }
+          }
+      }
+
+        .row {
+          .col {
+            padding: 2px;
+          }
+          button {
+            height: 50px;
+          }
+        }
+
+        .item-md {
+          padding-left: 0;
+          background: #ffffff;
+          font-size: 16px;
+          .label {
+            color: #545353;
+          }
+        }
+      }
+    }
+}

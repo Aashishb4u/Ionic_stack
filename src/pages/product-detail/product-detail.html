@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-navbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-product-detail" >
+    <ion-col class="content-area" col-12>
+        <ion-grid class="product-detail-title">
+            <ion-row>
+                <ion-col class="product-title" col-12>
+                    <h3>{{product.name}}
+                        <br>
+                        <small *ngFor="let b of product.categories">{{b.name}}&nbsp;</small>
+                    </h3>
+                </ion-col>
+                <div class="product-tags">
+                    <div class="product-tag-off" *ngIf="product.on_sale">{{'SALE'|translate}}</div>
+                </div>
+                <ion-col class="woo-price-group" col-12>
+                    <span class="woo-price" [innerHTML]="product.price_html"></span>
+                    <span class="woo-price" *ngIf="variationPrice!=null">{{'Your Price'|translate}} &nbsp; {{variationPrice|curency}}</span>
+                    <span class="product-outstock" *ngIf="!product.in_stock">{{'Out of Stock'|translate}}</span>
+                    <span class="product-instock" *ngIf="product.in_stock">{{'In Stock'|translate}}&nbsp;
+          <span *ngIf="product.stock_quantity!=null">({{product.stock_quantity}})</span>
+        </span>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <ion-slides class="product-slides" pager="true" dir="{{shared.dir}}">
+            <ion-slide *ngFor="let b of product.images">
+                <div>
+                    <img src="{{b.src}}" imageViewer>
+                </div>
+            </ion-slide>
+            <ion-slide *ngIf="(product.images).length == 0">
+                <div>
+                    <img src="assets/intro/default_product.png" imageViewer>
+                </div>
+            </ion-slide>
+        </ion-slides>
+        <ion-grid class="product-size-content" *ngIf="product.description!=null && product.description!=''">
+            <ion-row>
+                <h4>Try On</h4>
+                <ion-col col-12 left>
+                    <div class="size_wrap">
+                        <ion-col col-12 left>
+                            <ion-col col-3 left >
+                                <div class="size_type" [ngClass]="{'selected_size': selected_size === 'S' }"  (click)="select_size('S')">S</div>
+                            </ion-col>
+                            <ion-col col-3 left>
+                                <div class="size_type"  [ngClass]="{'selected_size': selected_size === 'M' }" (click)="select_size('M')" >M</div>
+                            </ion-col>
+                            <ion-col col-3 left>
+                                <div class="size_type" [ngClass]="{'selected_size': selected_size === 'L' }" (click)="select_size('L')" >L</div>
+                            </ion-col>
+                            <ion-col col-3 left>
+                                <div class="size_type" [ngClass]="{'selected_size': selected_size === 'XL' }" (click)="select_size('XL')" >XL</div>
+                            </ion-col>
+                        </ion-col>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <ion-grid class="product-order-content" *ngIf="product.description!=null && product.description!=''">
+            <ion-row>
+                <div class="add_to_bag_wrap">
+                    <ion-col col-12>
+                        <button class="add_to_bag" ion-button block color="light" [disabled]="disableCartButton"  (click)="addToCartProduct()">{{ 'Add To Bag' | translate }}</button>
+                    </ion-col>
+                </div>
+            </ion-row>
+        </ion-grid>
+        <ion-grid class="product-detail-content" *ngIf="product.description!=null && product.description!=''">
+            <ion-row>
+                <ion-col col-12>
+                    <h4>{{'Product Description'|translate}}</h4>
+                    <div class="product-describtion" [innerHTML]="product.description"></div>
+                </ion-col>
+                <ion-col col-12>
+                    <div class="product-describtion">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-col>
+</ion-content>

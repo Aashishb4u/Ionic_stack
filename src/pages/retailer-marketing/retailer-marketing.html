@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only class="left-block" (click)="dismiss()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <div class="header-lable-internal">
+      Everlane
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-retailer-marketing" >
+  <div class="content-area" *ngIf="product">
+    <div class="everlane-slot-1">
+      <div class="slot-1-heading">
+        <div>{{ everlane_heading }}</div>
+      </div>
+      <img src="{{ image_display_1 }}" >
+    </div>
+    <div class="everlane-slot-2">
+      <div class="slot-2-heading">
+        <div>{{ everlane_content }}</div>
+      </div>
+      <ion-row>
+        <div class="add_to_bag_wrap">
+          <ion-col col-12>
+            <button class="add_to_bag" ion-button block color="light" [disabled]="disableCartButton"  (click)="shopNow()">{{ 'Shop Now!' | translate }}</button>
+          </ion-col>
+        </div>
+      </ion-row>
+      <div class="two-image-container">
+        <ion-col col-12 left>
+          <ion-col col-6 left >
+
+          <img src="{{ image_display_1 }}" >
+          </ion-col>
+          <ion-col col-6 left >
+            <img src="{{ image_display_2 }}" >
+          </ion-col>
+        </ion-col>
+      </div>
+    </div>
+    <div class="everlane-slot-3">
+      <h3>Try it On!</h3>
+      <div class="one-image-container">
+        <ion-slides *ngIf="product" class="product-slides" pager="true" dir="{{shared.dir}}">
+          <ion-slide *ngFor="let b of product.images">
+            <div>
+              <img src="{{b.src}}" imageViewer>
+            </div>
+          </ion-slide>
+          <ion-slide *ngIf="(product.images).length == 0">
+            <div>
+              <img src="assets/intro/default_product.png" imageViewer>
+            </div>
+          </ion-slide>
+        </ion-slides>
+      </div>
+      <ion-row>
+        <ion-col col-12 left>
+          <div class="size_wrap">
+            <ion-col col-12 left>
+              <ion-col col-3 left >
+                <div class="size_type" [ngClass]="{'selected_size': selected_size === 'S' }"  (click)="select_size('S')">S</div>
+              </ion-col>
+              <ion-col col-3 left>
+                <div class="size_type"  [ngClass]="{'selected_size': selected_size === 'M' }" (click)="select_size('M')" >M</div>
+              </ion-col>
+              <ion-col col-3 left>
+                <div class="size_type" [ngClass]="{'selected_size': selected_size === 'L' }" (click)="select_size('L')" >L</div>
+              </ion-col>
+              <ion-col col-3 left>
+                <div class="size_type" [ngClass]="{'selected_size': selected_size === 'XL' }" (click)="select_size('XL')" >XL</div>
+              </ion-col>
+            </ion-col>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

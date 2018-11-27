@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only class="left-block" (click)="dismiss()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <div class="header-lable-internal">
+      Reformation
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-retailer-product" (ionScroll)="onScroll($event)">
+
+  <ion-row menuClose class="card-row" >
+    <ion-row class="grid-b">
+        <ion-col col-6 *ngFor="let row of grid" (click)="loadProduct(row)">
+          <div class="image-wrap" >
+            <img src="{{ row.images[0].src }}">
+            <div class="product-wrap">
+              <div>{{ row.name }}</div>
+              <div><b>${{ row.price }}</b></div>
+              <div>
+                <ion-icon ios="ios-star" md="md-star"></ion-icon>
+                <ion-icon ios="ios-star" md="md-star"></ion-icon>
+                <ion-icon ios="ios-star" md="md-star"></ion-icon>
+                <ion-icon ios="ios-star" md="md-star"></ion-icon>
+                <ion-icon ios="ios-star" md="md-star"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </ion-col>
+    </ion-row>
+  </ion-row>
+</ion-content>

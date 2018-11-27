@@ -1,0 +1,33 @@
+<ion-nav [root]="rootPage" *ngIf="isLoggedin"></ion-nav>
+
+<ion-content *ngIf="!isLoggedin" >
+  <ion-slides #slider pager="true" class="welcome_slider" (ionSlideWillChange)="onSlideChanged()">
+    <ion-slide effect="fade" *ngFor="let s of Slides; let i = index" padding>
+      <img class="silder_img" src="{{ s.imageUrl }}"/>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="contant_data">
+    <div>
+      <ion-avatar>
+        <div class="image_div"><img style="display: inline-block;" src="../assets/upton_logo.png" /></div>
+      </ion-avatar>
+    </div>
+  </div>
+  <div *ngIf="currentIndex > 0"
+       class="swiper-button-prev swiper-button-white"
+       (click)="previousSlide()"></div>
+  <div *ngIf="currentIndex < Slides.length-1"
+       class="swiper-button-next swiper-button-white"
+       (click)="nextSlide()"></div>
+
+
+  <div class="slider_buttons">
+    <div class="login_button">
+      <button ion-button (click)="openLoginPage()">Login</button>
+    </div>
+    <div class="login_button">
+      <button ion-button (click)="openGetStarted()">Get Started</button>
+    </div>
+  </div>
+</ion-content>

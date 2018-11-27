@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only class="left-block" (click)="dismiss()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <div class="header-lable-internal">
+      Generic List
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-retailer-product" (ionScroll)="onScroll($event)">
+
+  <ion-row menuClose class="card-row" >
+    <ion-row class="grid-b">
+        <ion-col col-6 *ngFor="let row of grid" (click)="loadProduct(row)">
+          <div class="image-wrap" >
+            <img src="{{ row.imageUrl }}">
+            <div class="details">
+              <div>Reformation</div>
+              <div>{{ row.title }}</div>
+              <div><b>${{ row.price }}</b></div>
+            </div>
+          </div>
+        </ion-col>
+    </ion-row>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,86 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-admob-free": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-facebook4": {
+      "APP_ID": "254867015006519",
+      "APP_NAME": "TryOn",
+      "ANDROID_SDK_VERSION": "4.+",
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-native-spinner": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-themeablebrowser": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-wheel-selector-plugin": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-app-preferences": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-admob-sdk": {
+      "PLAY_SERVICES_VERSION": "11.0.4",
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-promise-polyfill": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.tryon.ionic.woocommerce"
+    }
+  }
+}

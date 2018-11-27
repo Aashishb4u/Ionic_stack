@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons left>
+            <button ion-button icon-only (click)="dismiss()">
+                <ion-icon name="ios-arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="page-login" padding>
+
+    <div class=" content_box">
+        <div>
+            <ion-avatar>
+                 <img src="assets/upton_logo.png">
+            </ion-avatar>
+        </div>
+        <div col-12>
+            <label class="red-color" *ngIf="errorMessage!=''">
+                <span>{{errorMessage| translate}}</span>
+            </label>
+            <form #loginForm="ngForm" class="form" (ngSubmit)="login()">
+                <ion-row class="grid-b">
+                    <ion-col col-12>
+                        <ion-list>
+                            <ion-item>
+                                <ion-label floating>{{'E-mail'|translate}}</ion-label>
+                                <ion-input type="text" name="email" [(ngModel)]="formData.username"
+                                           required></ion-input>
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label floating>{{'Password'|translate}}</ion-label>
+                                <ion-input type="password" name="password" [(ngModel)]="formData.password"
+                                           required></ion-input>
+                            </ion-item>
+
+                        </ion-list>
+                    </ion-col>
+
+                    <a class="forgot_link" (click)="openForgetPasswordPage()">{{ "Forgot Password?" | translate }}</a>
+
+                    <div class="login_cover">
+                        <div class="login_button_main">
+                            <button ion-button block type="submit" [disabled]="!loginForm.form.valid">{{ 'LOG IN' |
+                                translate }}
+                            </button>
+                        </div>
+                    </div>
+                </ion-row>
+            </form>
+        </div>
+        <div col-12>
+            <ion-col class="create_button" col-12>
+                <button style="margin-top: 2vh" ion-button clear (click)="openSignUpPage()">Create Account</button>
+            </ion-col>
+        </div>
+    </div>
+</ion-content>

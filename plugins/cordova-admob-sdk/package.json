@@ -1,0 +1,121 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-admob-sdk@~0.13.1",
+        "scope": null,
+        "escapedName": "cordova-admob-sdk",
+        "name": "cordova-admob-sdk",
+        "rawSpec": "~0.13.1",
+        "spec": ">=0.13.1 <0.14.0",
+        "type": "range"
+      },
+      "/Volumes/data/working Directory/demo 2"
+    ]
+  ],
+  "_from": "cordova-admob-sdk@>=0.13.1 <0.14.0",
+  "_id": "cordova-admob-sdk@0.13.1",
+  "_inCache": true,
+  "_location": "/cordova-admob-sdk",
+  "_nodeVersion": "9.2.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-admob-sdk-0.13.1.tgz_1512869731205_0.3359144751448184"
+  },
+  "_npmUser": {
+    "name": "ratson",
+    "email": "npm@ratson.name"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-admob-sdk@~0.13.1",
+    "scope": null,
+    "escapedName": "cordova-admob-sdk",
+    "name": "cordova-admob-sdk",
+    "rawSpec": "~0.13.1",
+    "spec": ">=0.13.1 <0.14.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-admob-sdk/-/cordova-admob-sdk-0.13.1.tgz",
+  "_shasum": "444f4410209877d953bdba9c6f5f7e2eac641f5a",
+  "_shrinkwrap": null,
+  "_spec": "cordova-admob-sdk@~0.13.1",
+  "_where": "/Volumes/data/working Directory/demo 2",
+  "author": {
+    "name": "Ratson"
+  },
+  "bugs": {
+    "url": "https://github.com/rehy/cordova-admob-sdk/issues"
+  },
+  "cordova": {
+    "id": "cordova-admob-sdk",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Google AdMob SDK to Cordova.",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "lintspaces-cli": "^0.6.0",
+    "sync-package-version": "0.0.5"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-6cfC967kSDMIg7XUB3pfoHRj3/4WgqaYehMbSbFTT34tAQHhSclaXufOWKDjXEeWloXDm+4KDD46hs4nN6VdNA==",
+    "shasum": "444f4410209877d953bdba9c6f5f7e2eac641f5a",
+    "tarball": "https://registry.npmjs.org/cordova-admob-sdk/-/cordova-admob-sdk-0.13.1.tgz"
+  },
+  "files": [
+    "*.js",
+    "*.md",
+    "*.xml",
+    "LICENSE",
+    "src",
+    "www"
+  ],
+  "gitHead": "a6b8664c0a1389ebb7f2880ece7e2d8e6a7c51ba",
+  "homepage": "https://github.com/rehy/cordova-admob-sdk#readme",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "ad",
+    "admob",
+    "google",
+    "sdk"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "plugin.xml": [
+      "lintspaces -d spaces -s 4"
+    ]
+  },
+  "maintainers": [
+    {
+      "name": "ratson",
+      "email": "npm@ratson.name"
+    }
+  ],
+  "name": "cordova-admob-sdk",
+  "optionalDependencies": {},
+  "readme": "# Google AdMob SDK for Cordova\n\nThis plugin is intended to be a dependency of other plugins.\n\n## Dependents\n\n* [cordova-plugin-admob-free](https://www.npmjs.com/package/cordova-plugin-admob-free)\n\n## Disclaimer\n\nThis is NOT an official Google product. It is just a community-driven project,\nrepackaging SDKs for Cordova plugins.\n\n## Installation\n\nIf you need to update the version of Play Services that is included by this\nplugin you can edit your config.xml file:\n\n```\n<plugin name=\"cordova-admob-sdk\" spec=\"../plugins/cordova-admob-sdk\">\n    <variable name=\"PLAY_SERVICES_VERSION\" value=\"11.0.1\" />\n</plugin>\n\nYou just need to change the value to what your application needs. Note: This has been added for compatiblity with other plugins that include Play Services or FCM libraries.\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rehy/cordova-admob-sdk.git"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "version": "sync-package-version --cordova-plugin"
+  },
+  "version": "0.13.1"
+}

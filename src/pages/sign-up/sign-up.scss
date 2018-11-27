@@ -1,0 +1,120 @@
+page-sign-up {
+
+    .toolbar-background {
+        background: #ffffff;
+    }
+
+    .ion-ios-arrow-back {
+        color: #1B9AF7;
+    }
+
+    .page-sign-up {
+        background: #ffffff;
+        .content_box {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 3vh;
+
+            .row {
+                .col {
+                    padding: 2px;
+                }
+                button {
+                    height: 50px;
+                }
+            }
+
+            .item-md {
+                padding-left: 0;
+                background: #ffffff;
+                font-size: 16px;
+                .label {
+                    color: #545353;
+                }
+            }
+
+            .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus):last-child {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .item-md.item-input.input-has-focus:last-child {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .item-md.item-input.input-has-focus .item-inner {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .margin_20 {
+                margin-top: 20px;
+            }
+
+            .login_cover {
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 10px;
+                .login_button_main {
+                    .button {
+                        height: 40px;
+                        color: white;
+                        font-size: 15px;
+                        background: #1B9AF7;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+          .forget_cover {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px;
+            .forgot_link {
+              font-size: 15px;
+              color: black;
+            }
+          }
+
+            .create_button {
+                margin-top: 15px;
+                text-align: center;
+                .button {
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    .red-color {
+        color: red;
+        text-align: center;
+        width: 100%;
+    }
+    .footer {
+        .button {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    .button {
+        height: 40px;
+    }
+}

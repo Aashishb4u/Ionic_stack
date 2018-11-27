@@ -1,0 +1,145 @@
+<!--
+  Generated template for the ForgetPasswordPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="page-user-info" padding>
+
+  <div class="content_box">
+    <div col-12>
+      <label class="red-color" *ngIf="errorMessage!=''">
+        <span>{{errorMessage| translate}}</span>
+      </label>
+      <form #loginForm="ngForm" class="form" (ngSubmit)="userinfo()">
+        <div>
+          <ion-col col-12>
+            <div class="forget_header">
+              <div>Gender</div>
+            </div>
+          </ion-col>
+          <ion-col col-12>
+            <ion-segment color="primary" name="gender" [(ngModel)]="formData.gender" >
+              <ion-segment-button value="male">
+                Male
+              </ion-segment-button>
+              <ion-segment-button value="female">
+                Female
+              </ion-segment-button>
+            </ion-segment>
+          </ion-col>
+        </div>
+        <div>
+          <ion-col col-12>
+            <div class="forget_header">
+              <div>Height</div>
+            </div>
+          </ion-col>
+          <ion-col col-12>
+            <ion-segment color="primary" name="height" [(ngModel)]="formData.height" >
+              <ion-segment-button value="Inches">
+                FEET/INCH
+              </ion-segment-button>
+              <ion-segment-button value="cm">
+                CM
+              </ion-segment-button>
+            </ion-segment>
+          </ion-col>
+          <div class= "inches" *ngIf="formData.height == 'Inches' " col-12>
+            <div class="inches-box" col-6>
+              <ion-item>
+                <ion-label>Feet</ion-label>
+                <ion-select name="feet"  [(ngModel)]="formData.feet" >
+                  <ion-option value="4">4'</ion-option>
+                  <ion-option value="5">5'</ion-option>
+                  <ion-option value="6">6'</ion-option>
+                  <ion-option value="7">7'</ion-option>
+                  <ion-option value="8">8'</ion-option>
+                </ion-select>
+              </ion-item>
+            </div>
+            <div class="inches-box" col-6>
+              <ion-item>
+                <ion-label>Inches</ion-label>
+                <ion-select  name="inches" [(ngModel)]="formData.inches" >
+                  <ion-option value="4">1"</ion-option>
+                  <ion-option value="4">2"</ion-option>
+                  <ion-option value="4">3"</ion-option>
+                  <ion-option value="4">4"</ion-option>
+                  <ion-option value="5">5"</ion-option>
+                  <ion-option value="6">6"</ion-option>
+                  <ion-option value="7">7"</ion-option>
+                  <ion-option value="8">8"</ion-option>
+                  <ion-option value="8">9"</ion-option>
+                  <ion-option value="8">10"</ion-option>
+                  <ion-option value="8">11"</ion-option>
+                </ion-select>
+              </ion-item>
+            </div>
+          </div>
+          <div class= "inches" *ngIf="formData.height == 'cm' " col-12>
+            <div class="cm-box" col-6>
+              <ion-item>
+                <ion-label>Height (in cm) </ion-label>
+                <ion-select  name="cm" [(ngModel)]="formData.cm" >
+                  <ion-option *ngFor="let unit of numbers; let i = index;" value="{{ 150 + unit }}">{{ 150 + unit }}</ion-option>
+                </ion-select>
+              </ion-item>
+            </div>
+          </div>
+        </div>
+		<div>
+          <ion-col col-12>
+            <div class="forget_header">
+              <div>Weight</div>
+            </div>
+          </ion-col>
+          <ion-col col-12>
+            <ion-segment color="primary" name="weight" [(ngModel)]="formData.weight" >
+              <ion-segment-button value="Pounds">
+                Pounds
+              </ion-segment-button>
+              <ion-segment-button value="KG">
+                KG
+              </ion-segment-button>
+            </ion-segment>
+          </ion-col>
+          <div class= "pounds" *ngIf="formData.weight == 'Pounds' " col-12>
+            <div class="pounds-box" col-12>
+              <ion-item>
+                <ion-label>Weight (in pounds) </ion-label>
+                <ion-input type="number" name="pounds" placeholder="110" [(ngModel)]="formData.pounds" ></ion-input>
+              </ion-item>
+            </div>
+          </div>
+          <div class= "inches" *ngIf="formData.weight == 'KG' " col-12>
+            <div class="kg-box" col-12>
+              <ion-item>
+                <ion-label>Weight (in KG) </ion-label>
+                <ion-input type="number" name="kg" placeholder="45kg" [(ngModel)]="formData.kg" ></ion-input>
+              </ion-item>
+            </div>
+          </div>
+        </div>
+        <div class="info-button-block" col-12>
+          <div class="info_cover">
+            <div class="info_button_main">
+              <button ion-button block type="" >{{ 'Continue' | translate }}</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</ion-content>

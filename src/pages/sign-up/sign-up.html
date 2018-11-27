@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="page-sign-up" padding>
+
+  <div class="content_box">
+    <ion-row>
+      <ion-col col-12>
+        <button ion-button block color="light" (click)="signInWithGoogle()">{{ 'Signup with Google' | translate
+          }}
+        </button>
+      </ion-col>
+      <ion-col col-12>
+        <button ion-button block color="light" (click)="signInWithFB()">{{ 'Signup with Facebook' | translate
+          }}
+        </button>
+      </ion-col>
+    </ion-row>
+
+    <div col-12>
+      <label class="red-color" *ngIf="errorMessage!=''">
+        <span>{{errorMessage| translate}}</span>
+      </label>
+      <form #loginForm="ngForm" class="form" (ngSubmit)="signUp()">
+        <ion-row class="grid-b">
+          <ion-col col-12>
+            <ion-list>
+              <ion-item>
+                <ion-label floating>{{'E-mail'|translate}}</ion-label>
+                <ion-input type="email" email name="customers_email_address" [(ngModel)]="formData.email"
+                           required></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label floating>{{'Password'|translate}}</ion-label>
+                <ion-input type="password" name="customers_password" [(ngModel)]="formData.password"
+                           required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label floating>{{'Re-type Password'|translate}}</ion-label>
+                <ion-input type="password" name="customers_password" [(ngModel)]="formData.repassword"
+                           required></ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+
+          <div class="login_cover">
+            <div class="login_button_main">
+              <button ion-button block type="submit" [disabled]="!loginForm.form.valid">{{ 'Create Account' |
+                translate }}
+              </button>
+            </div>
+          </div>
+          <ion-row class="forget_cover">
+            <!--<ion-col col-12>-->
+              <!--<a class="forgot_link" (click)="dismiss()">{{ "Maybe Later" | translate }}</a>-->
+            <!--</ion-col>-->
+          </ion-row>
+        </ion-row>
+      </form>
+    </div>
+  </div>
+</ion-content>

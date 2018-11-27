@@ -1,0 +1,330 @@
+<!--
+  Generated template for the ForgetPasswordPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="page-user-info2" padding>
+
+  <div class="content_box">
+    <div col-12>
+      <label class="red-color" *ngIf="errorMessage!=''">
+        <span>{{errorMessage| translate}}</span>
+      </label>
+      <form #loginForm="ngForm" class="form" (ngSubmit)="userinfo2()">
+        <div>
+          <ion-col col-12>
+            <div class="forget_header">
+              <div>Body Type</div>
+            </div>
+          </ion-col>
+          <ion-col col-12>
+            <ion-segment color="primary" name="bodyType" [(ngModel)]="formData.bodyType" *ngIf="formData.gender=='male'">
+              <ion-segment-button value="oval">
+                <ion-icon name="add-circle"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button value="rectangle">
+                <ion-icon name="square"></ion-icon> 
+              </ion-segment-button>
+			  <ion-segment-button value="trapezoid">
+                <ion-icon name="person"></ion-icon> 
+              </ion-segment-button>
+			  <ion-segment-button value="triangle">
+                <ion-icon name="people"></ion-icon> 
+              </ion-segment-button>
+			  <ion-segment-button value="invertedtriangle">
+                <ion-icon name="logo-android"></ion-icon>
+              </ion-segment-button>
+            </ion-segment>
+			<ion-segment color="primary" name="bodyType" [(ngModel)]="formData.bodyType" *ngIf="formData.gender=='female'">
+              <ion-segment-button value="hourglass">
+                <ion-icon name="logo-android"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button value="oval">
+                <ion-icon name="square"></ion-icon> 
+              </ion-segment-button>
+			  <ion-segment-button value="rectangle">
+                <ion-icon name="person"></ion-icon> 
+              </ion-segment-button>
+			  <ion-segment-button value="triangle">
+                <ion-icon name="people"></ion-icon> 
+              </ion-segment-button>
+			  <ion-segment-button value="invertedtriangle">
+                <ion-icon name="add-circle"></ion-icon>
+              </ion-segment-button>
+            </ion-segment>
+          </ion-col>
+          <ion-col col-12>
+            <div class="fitnessLevel-box" col-12>
+              <ion-item>
+                <ion-label>Exercise hours/week</ion-label>
+                <ion-select name="fitnessLevel"  [(ngModel)]="formData.fitnessLevel" >
+                  <ion-option value="low">Never</ion-option>
+                  <ion-option value="low">1-3 hours</ion-option>
+                  <ion-option value="medium">4-6 hours</ion-option>
+                  <ion-option value="high">7-10 hours</ion-option>
+                  <ion-option value="high">11+ hours</ion-option>
+                </ion-select>
+			  </ion-item>
+            </div>
+          </ion-col>
+		  <ion-col *ngIf="formData.gender == 'male'" col-12>
+			<div class="forget_header">
+			  <div>Dress Shirt Size</div>
+			</div>
+		  </ion-col>
+		  <ion-col *ngIf="formData.gender == 'male'" col-12>
+			  <div class="inches" col-12>
+				<div class="inches-box" col-6>
+				  <ion-item>
+					<ion-label>Neck</ion-label>
+					<ion-select name="dressShirtNeck"  [(ngModel)]="formData.dressShirtNeck" >
+					  <ion-option value="10">10"</ion-option>
+					  <ion-option value="10.5">10.5"</ion-option>
+					  <ion-option value="11">11"</ion-option>
+					  <ion-option value="11.5">11.5"</ion-option>
+					  <ion-option value="12">12"</ion-option>
+					  <ion-option value="12.5">12.5"</ion-option>
+					  <ion-option value="13">13"</ion-option>
+					  <ion-option value="13.5">13.5"</ion-option>
+					  <ion-option value="14">14"</ion-option>
+					  <ion-option value="14.5">14.5"</ion-option>
+					  <ion-option value="15">15"</ion-option>
+					  <ion-option value="15.5">15.5"</ion-option>
+					  <ion-option value="16">16"</ion-option>
+					  <ion-option value="16.5">16.5"</ion-option>
+					  <ion-option value="17">17"</ion-option>
+					  <ion-option value="17.5">17.5"</ion-option>
+					  <ion-option value="18">18"</ion-option>
+					  <ion-option value="18.5">18.5"</ion-option>
+					  <ion-option value="19">19"</ion-option>
+					  <ion-option value="19.5">19.5"</ion-option>
+					</ion-select>
+				  </ion-item>
+				</div>
+				<div class="inches-box" col-6>
+				  <ion-item>
+					<ion-label>Sleeve</ion-label>
+					<ion-select  name="dressShirtSleeve" [(ngModel)]="formData.dressShirtSleeve" >
+					  <ion-option value="27">27"</ion-option>
+					  <ion-option value="27.5">27.5"</ion-option>
+					  <ion-option value="28">28"</ion-option>
+					  <ion-option value="28.5">28.5"</ion-option>
+					  <ion-option value="29">29"</ion-option>
+					  <ion-option value="29.5">29.5"</ion-option>
+					  <ion-option value="30">30"</ion-option>
+					  <ion-option value="30.5">30.5"</ion-option>
+					  <ion-option value="31">31"</ion-option>
+					  <ion-option value="31.5">31.5"</ion-option>
+					  <ion-option value="32">32"</ion-option>
+					  <ion-option value="32.5">32.5"</ion-option>
+					  <ion-option value="33">33"</ion-option>
+					  <ion-option value="33.5">33.5"</ion-option>
+					  <ion-option value="34">34"</ion-option>
+					  <ion-option value="34.5">34.5"</ion-option>
+					  <ion-option value="35">35"</ion-option>
+					  <ion-option value="35.5">35.5"</ion-option>
+					  <ion-option value="36">36"</ion-option>
+					  <ion-option value="36.5">36.5"</ion-option>
+					</ion-select>
+				  </ion-item>
+				</div>
+			  </div>
+		  </ion-col>
+		  <ion-col *ngIf="formData.gender == 'male'" col-12>
+			<div class="forget_header">
+			  <div>Pant Size</div>
+			</div>
+		  </ion-col>
+		  <ion-col *ngIf="formData.gender == 'male'" col-12>
+			  <div class= "inches" col-12>
+				<div class="inches-box" col-6>
+				  <ion-item>
+					<ion-label>Waist</ion-label>
+					<ion-select name="pantWaist"  [(ngModel)]="formData.pantWaist" >
+					  <ion-option value="27">27"</ion-option>
+					  <ion-option value="27.5">27.5"</ion-option>
+					  <ion-option value="28">28"</ion-option>
+					  <ion-option value="28.5">28.5"</ion-option>
+					  <ion-option value="29">29"</ion-option>
+					  <ion-option value="29.5">29.5"</ion-option>
+					  <ion-option value="30">30"</ion-option>
+					  <ion-option value="30.5">30.5"</ion-option>
+					  <ion-option value="31">31"</ion-option>
+					  <ion-option value="31.5">31.5"</ion-option>
+					  <ion-option value="32">32"</ion-option>
+					  <ion-option value="32.5">32.5"</ion-option>
+					  <ion-option value="33">33"</ion-option>
+					  <ion-option value="33.5">33.5"</ion-option>
+					  <ion-option value="34">34"</ion-option>
+					  <ion-option value="34.5">34.5"</ion-option>
+					  <ion-option value="35">35"</ion-option>
+					  <ion-option value="35.5">35.5"</ion-option>
+					  <ion-option value="36">36"</ion-option>
+					  <ion-option value="36.5">36.5"</ion-option>
+					</ion-select>
+				  </ion-item>
+				</div>
+				<div class="inches-box" col-6>
+				  <ion-item>
+					<ion-label>Inseam</ion-label>
+					<ion-select  name="pantInseam" [(ngModel)]="formData.pantInseam" >
+					  <ion-option value="27">27"</ion-option>
+					  <ion-option value="27.5">27.5"</ion-option>
+					  <ion-option value="28">28"</ion-option>
+					  <ion-option value="28.5">28.5"</ion-option>
+					  <ion-option value="29">29"</ion-option>
+					  <ion-option value="29.5">29.5"</ion-option>
+					  <ion-option value="30">30"</ion-option>
+					  <ion-option value="30.5">30.5"</ion-option>
+					  <ion-option value="31">31"</ion-option>
+					  <ion-option value="31.5">31.5"</ion-option>
+					  <ion-option value="32">32"</ion-option>
+					  <ion-option value="32.5">32.5"</ion-option>
+					  <ion-option value="33">33"</ion-option>
+					  <ion-option value="33.5">33.5"</ion-option>
+					  <ion-option value="34">34"</ion-option>
+					  <ion-option value="34.5">34.5"</ion-option>
+					  <ion-option value="35">35"</ion-option>
+					  <ion-option value="35.5">35.5"</ion-option>
+					  <ion-option value="36">36"</ion-option>
+					  <ion-option value="36.5">36.5"</ion-option>
+					</ion-select>
+				  </ion-item>
+				</div>
+			  </div>
+		  </ion-col>
+		  <ion-col *ngIf="formData.gender == 'female'" col-12>
+			<div class="forget_header">
+			  <div>Bra Size</div>
+			</div>
+		  </ion-col>
+		  <ion-col *ngIf="formData.gender == 'female'" col-12>
+			  <div class= "inches" col-12>
+				<div class="inches-box" col-6>
+				  <ion-item>
+					<ion-label>Circumference</ion-label>
+					<ion-select name="braCircumference"  [(ngModel)]="formData.braCircumference" >
+					  <ion-option value="27">27"</ion-option>
+					  <ion-option value="27.5">27.5"</ion-option>
+					  <ion-option value="28">28"</ion-option>
+					  <ion-option value="28.5">28.5"</ion-option>
+					  <ion-option value="29">29"</ion-option>
+					  <ion-option value="29.5">29.5"</ion-option>
+					  <ion-option value="30">30"</ion-option>
+					  <ion-option value="30.5">30.5"</ion-option>
+					  <ion-option value="31">31"</ion-option>
+					  <ion-option value="31.5">31.5"</ion-option>
+					  <ion-option value="32">32"</ion-option>
+					  <ion-option value="32.5">32.5"</ion-option>
+					  <ion-option value="33">33"</ion-option>
+					  <ion-option value="33.5">33.5"</ion-option>
+					  <ion-option value="34">34"</ion-option>
+					  <ion-option value="34.5">34.5"</ion-option>
+					  <ion-option value="35">35"</ion-option>
+					  <ion-option value="35.5">35.5"</ion-option>
+					  <ion-option value="36">36"</ion-option>
+					  <ion-option value="36.5">36.5"</ion-option>
+					</ion-select>
+				  </ion-item>
+				</div>
+				<div class="inches-box" col-6>
+				  <ion-item>
+					<ion-label>Cup</ion-label>
+					<ion-select  name="braCup" [(ngModel)]="formData.braCup" >
+					  <ion-option value="AA">AA</ion-option>
+					  <ion-option value="A">A</ion-option>
+					  <ion-option value="B">B</ion-option>
+					  <ion-option value="C">C</ion-option>
+					  <ion-option value="D">D</ion-option>
+					  <ion-option value="E">E (DD)</ion-option>
+					  <ion-option value="F">F (DDD)</ion-option>
+					  <ion-option value="G">G (DDDD)</ion-option>
+					  <ion-option value="H">H</ion-option>
+					  <ion-option value="I">I</ion-option>
+					  <ion-option value="J">J</ion-option>
+					  <ion-option value="K">K</ion-option>
+					</ion-select>
+				  </ion-item>
+				</div>
+			  </div>
+		  </ion-col>
+		  <ion-col *ngIf="formData.gender == 'female'" col-12>
+			<div class="forget_header">
+			  <div>Breast Shape</div>
+			</div>
+		  </ion-col>
+		  <ion-col *ngIf="formData.gender == 'female'" col-12>
+            <ion-segment color="primary" name="breastShape" [(ngModel)]="formData.breastShape">
+              <ion-segment-button value="athletic">
+                <ion-icon name="add-circle"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button value="bellshape">
+                <ion-icon name="square"></ion-icon> 
+              </ion-segment-button>
+			  <ion-segment-button value="eastwest">
+                <ion-icon name="person"></ion-icon> 
+              </ion-segment-button>
+			  <ion-segment-button value="relaxed">
+                <ion-icon name="people"></ion-icon> 
+              </ion-segment-button>
+            </ion-segment>
+			<ion-segment color="primary" name="breastShape" [(ngModel)]="formData.breastShape">
+              <ion-segment-button value="round">
+                <ion-icon name="logo-android"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button value="sideset">
+                <ion-icon name="square"></ion-icon> 
+              </ion-segment-button>
+			  <ion-segment-button value="slender">
+                <ion-icon name="person"></ion-icon> 
+              </ion-segment-button>
+			  <ion-segment-button value="teardrop">
+                <ion-icon name="people"></ion-icon> 
+              </ion-segment-button>
+            </ion-segment>
+          </ion-col>
+		  <ion-col *ngIf="formData.gender == 'female'" col-12>
+			<div class="forget_header">
+			  <div>Butt Shape</div>
+			</div>
+		  </ion-col>
+		  <ion-col *ngIf="formData.gender == 'female'" col-12>
+            <ion-segment color="primary" name="buttShape" [(ngModel)]="formData.buttShape">
+              <ion-segment-button value="invertedv">
+                <ion-icon name="add-circle"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button value="pear">
+                <ion-icon name="square"></ion-icon> 
+              </ion-segment-button>
+			  <ion-segment-button value="round">
+                <ion-icon name="person"></ion-icon> 
+              </ion-segment-button>
+			  <ion-segment-button value="square">
+                <ion-icon name="people"></ion-icon> 
+              </ion-segment-button>
+            </ion-segment>
+          </ion-col>
+        </div>
+        <div class="info-button-block" col-12>
+          <div class="info_cover">
+            <div class="info_button_main">
+              <button ion-button block type="" >{{ 'Continue' | translate }}</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</ion-content>

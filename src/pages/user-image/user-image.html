@@ -1,0 +1,40 @@
+<!--
+  Generated template for the ForgetPasswordPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right >
+      <button ion-button icon-only (click)="navigateToUserBody()">
+        <div class="skip-btn" >SKIP</div>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="page-user-image" padding>
+
+  <div class="content_box">
+    <div col-12 class="info-button-block-text">
+      <div>Click on the camera icon below to take/upload a headshot photograph.</div>
+    </div>
+    <div col-12 class="info-button-block">
+      <div class="info_cover">
+        <div class="info_button_main">
+          <button >
+              <input id="file" type="file" accept="image/*" (change)="upload($event)">
+              <ion-icon name="camera"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

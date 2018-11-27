@@ -1,0 +1,145 @@
+page-user-image {
+
+    .toolbar-background {
+        background: #ffffff;
+    }
+
+    .ion-ios-arrow-back {
+        color: #1B9AF7;
+    }
+
+  .skip-btn {
+      color: black;
+      font-size: 18px;
+    }
+
+    .red-color{
+        color: red;
+    }
+    .page-user-image{
+        background: #ffffff;
+        .content_box {
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 7vh;
+          text-align: center;
+
+          .segment-activated {
+            border-color: #209af7;
+            opacity: 1;
+            background: #209af7;
+            color: #ffffff !important;
+          }
+
+          .segment-button {
+            border-radius: 0 5px 5px 0;
+            border: 1px solid #209af7;
+            color: #209af7;
+            font-weight: bold;
+            font-size: 16px;
+          }
+          .segment-button:first-child {
+            border-radius: 5px 0 0 5px;
+          }
+
+          .row {
+            .col {
+              padding: 2px;
+            }
+            button {
+              height: 50px;
+            }
+          }
+
+          .item-md {
+            padding-left: 0;
+            background: #ffffff;
+            font-size: 16px;
+            .label {
+              color: #545353;
+            }
+          }
+
+          .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+          }
+
+          .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+          }
+
+          .list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus):last-child {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+          }
+
+          .item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+          }
+
+          .item-md.item-input.input-has-focus:last-child {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+          }
+
+          .item-md.item-input.input-has-focus .item-inner {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+          }
+
+          .margin_20 {
+            margin-top: 20px;
+          }
+
+          .info-button-block-text {
+            top: 40vh;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+
+
+          .info-button-block {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            .info_cover {
+              padding-bottom: 10px;
+              text-align: center;
+              z-index: 1;
+              width: 80%;
+              margin: 0 auto;
+              .info_button_main {
+                ion-icon {
+                  font-size: 40px;
+                  color: black;
+                }
+                button {
+                  position: relative;
+                  background: white;
+                  border: 4px solid #000000;
+                  border-radius: 50%;
+                  padding: 10px 13px;
+                }
+
+                #file {
+                  position: absolute;
+                  width: 10%;
+                  height: 10%;
+                  padding: 30px;
+                  left: 0;
+                  top: 0;
+                  opacity: 0;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+    }
+}

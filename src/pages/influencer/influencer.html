@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only class="left-block" (click)="dismiss()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-influencer" >
+
+  <ion-card *ngFor="let row of grid">
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/intro/img_4.jpg" />
+      </ion-avatar>
+      <div class="feed-head-name">Super Fly Influencer</div>
+      <p>San Fransisco, CA</p>
+    </ion-item>
+    <div class="img-feed-wrap">
+      <img src="assets/intro/img_4.jpg" />
+      <div class="shop_now_button_cover">
+        <button class="shop_now_button" ion-button block color="light" [disabled]="disableCartButton"  (click)="shopNow()">{{ 'Try it on' | translate }}</button>
+      </div>
+    </div>
+    <ion-row>
+      <ion-card-content>
+        <div>500K+ likes</div>
+        <div>
+          <b>Super Fly Influencer</b>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+      </ion-card-content>
+    </ion-row>
+  </ion-card>
+</ion-content>

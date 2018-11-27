@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <div class="header-lable">
+      Drapr
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-home" (ionScroll)="onScroll($event)">
+
+  <ion-row menuClose *ngFor="let row of grid" class="card-row" (click)="loadTile(row)" >
+    <div class="card">
+      {{ row.title }}
+    </div>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only class="left-block" (click)="dismiss()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <ion-buttons right >
+      <button ion-button icon-only (click)="selectedOutfits()">
+        <div class="skip-btn" >Done</div>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-quiz-personalization" (ionScroll)="onScroll($event)">
+  <h3>Help us determine your style choose all outfits that you like.</h3>
+  <ion-row menuClose class="card-row" >
+    <ion-row class="grid-b">
+        <ion-col col-4 *ngFor="let row of grid; let i = index " (click)="selectProduct(row)">
+          <div class="image-wrap" [ngClass]="{'selected-img': getSelection(row) }"  >
+            <img src="{{ row.imageUrl }}">
+          </div>
+        </ion-col>
+    </ion-row>
+  </ion-row>
+</ion-content>

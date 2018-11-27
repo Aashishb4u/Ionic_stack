@@ -1,0 +1,181 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-admob-free",
+        "scope": null,
+        "escapedName": "cordova-plugin-admob-free",
+        "name": "cordova-plugin-admob-free",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Volumes/data/working Directory/demo 2"
+    ]
+  ],
+  "_from": "cordova-plugin-admob-free@latest",
+  "_id": "cordova-plugin-admob-free@0.13.0",
+  "_inCache": true,
+  "_location": "/cordova-plugin-admob-free",
+  "_nodeVersion": "9.2.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-admob-free-0.13.0.tgz_1512870527098_0.7305056226905435"
+  },
+  "_npmUser": {
+    "name": "ratson",
+    "email": "npm@ratson.name"
+  },
+  "_npmVersion": "2.15.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-admob-free",
+    "scope": null,
+    "escapedName": "cordova-plugin-admob-free",
+    "name": "cordova-plugin-admob-free",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-admob-free/-/cordova-plugin-admob-free-0.13.0.tgz",
+  "_shasum": "8f29c73f7ab896c134230bfe4d75ef404c65a775",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-admob-free",
+  "_where": "/Volumes/data/working Directory/demo 2",
+  "author": {
+    "name": "Ratson"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 4 versions",
+    "Android > 2",
+    "last 2 ChromeAndroid versions"
+  ],
+  "bugs": {
+    "url": "https://github.com/ratson/cordova-plugin-admob-free/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-admob-free",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova AdMob Plugin for Google AdMob",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-lodash": "^3.3.2",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
+    "babel-plugin-transform-es3-property-literals": "^6.22.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "cordova": "^7.1.0",
+    "cordova-android": "^7.0.0",
+    "cordova-test-cli": "^0.0.1",
+    "cross-env": "^5.1.1",
+    "delay": "^2.0.0",
+    "es6-promise": "^4.1.1",
+    "esdoc": "^1.0.4",
+    "esdoc-ecmascript-proposal-plugin": "^1.0.0",
+    "esdoc-importpath-plugin": "^1.0.1",
+    "esdoc-standard-plugin": "^1.0.0",
+    "eslint": "^4.13.0",
+    "eslint-config-concise": "^0.16.0",
+    "eslint-config-concise-esnext": "^0.16.0",
+    "eslint-config-concise-jest": "^0.16.0",
+    "jest": "^21.2.1",
+    "lintspaces-cli": "^0.6.0",
+    "lodash": "^4.17.4",
+    "lodash-es": "^4.17.4",
+    "nodemon": "^1.12.5",
+    "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.52.1",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "sync-package-version": "^0.0.5"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "8f29c73f7ab896c134230bfe4d75ef404c65a775",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-admob-free/-/cordova-plugin-admob-free-0.13.0.tgz"
+  },
+  "files": [
+    "*.js",
+    "*.md",
+    "*.xml",
+    "LICENSE",
+    "src",
+    "www"
+  ],
+  "gitHead": "84958a14099d93a537cfd35ffd91e7cd2905d577",
+  "homepage": "https://ratson.github.io/cordova-plugin-admob-free/",
+  "jest": {
+    "collectCoverage": true,
+    "roots": [
+      "<rootDir>/tests/js"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "admob",
+    "ecosystem:cordova",
+    "cordova-plugin-admob",
+    "cordova-admob",
+    "cordova-android",
+    "cordova-ios",
+    "plugin",
+    "google",
+    "admobpro"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "ratson",
+      "email": "npm@ratson.name"
+    }
+  ],
+  "name": "cordova-plugin-admob-free",
+  "optionalDependencies": {},
+  "readme": "# Cordova AdMob Plugin\n\nA free, no ad-sharing version of Google AdMob plugin for Cordova.\n\n## Features\n\n* **No Ad-Sharing**\n\n  Unlike [some](https://github.com/appfeel/admob-google-cordova/blob/3f122f278a323a4bc9e580f400182a7bd690a346/src/android/AdMobAds.java#L569) [other](https://github.com/sunnycupertino/cordova-plugin-admob-simple/blob/a58846c1ea14188a4aef44381ccd28ffdcae3bfa/src/android/AdMob.java#L207) [plugins](https://github.com/floatinghotpot/cordova-admob-pro/wiki/License-Agreement#2-win-win-partnership), this plugin does not share your advertising revenue by randomly display developer's owned ads.\n\n* **Fully Open Sourced**\n\n  Except Google provided [AdMob SDKs](https://github.com/rehy/cordova-admob-sdk), every line of code are on Github. You don't [execute](https://github.com/admob-google/admob-cordova/blob/master/src/android/libs/admobadplugin.jar) [compiled](https://github.com/floatinghotpot/cordova-extension/blob/master/src/android/cordova-generic-ad.jar) [binary](https://github.com/floatinghotpot/cordova-extension/blob/master/src/ios/libCordovaGenericAd.a) without seeing the source code.\n\n* **No Remote Control**\n\n  Do not [send your application information to a remote server](https://github.com/floatinghotpot/cordova-admob-pro/issues/326) to control whether ad could be displayed. Therefore, you don't [lose revenue](https://github.com/floatinghotpot/cordova-admob-pro/issues/544) because [some server bugs](https://github.com/floatinghotpot/cordova-admob-pro/issues/450#issuecomment-244837346),\n\n### Compare to other projects\n\n| Project                                                                                      | No Ad-Sharing                                                                                                                                  | Fully Open Sourced                                                                                                                                                                                           | No Remote Control                                                                                                                             |\n| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |\n| [admob](https://github.com/admob-google/admob-cordova)                                       | Not Sure                                                                                                                                       | [❌](https://github.com/admob-google/admob-cordova/blob/master/src/android/libs/admobadplugin.jar) [❌](https://github.com/admob-google/admob-cordova/blob/master/src/ios/AdmobAPI.framework/AdmobAPI)       | Not Sure                                                                                                                                      |\n| [cordova-admob](https://github.com/appfeel/admob-google-cordova)                             | [❌](https://github.com/appfeel/admob-google-cordova/blob/3f122f278a323a4bc9e580f400182a7bd690a346/src/android/AdMobAds.java#L569)             | ✅                                                                                                                                                                                                           | ✅                                                                                                                                            |\n| [cordova-plugin-ad-admob](https://github.com/cranberrygame/cordova-plugin-ad-admob)          | [❌](https://github.com/cranberrygame/cordova-plugin-ad-admob/blob/7aaa397b19ab63579d6aa68fbf20ffdf795a15fc/src/android/AdMobPlugin.java#L330) | ✅                                                                                                                                                                                                           | ✅                                                                                                                                            |\n| [cordova-plugin-admob-free](https://github.com/ratson/cordova-plugin-admob-free)             | ✅                                                                                                                                             | ✅                                                                                                                                                                                                           | ✅                                                                                                                                            |\n| [cordova-plugin-admob-simple](https://github.com/sunnycupertino/cordova-plugin-admob-simple) | [❌](https://github.com/sunnycupertino/cordova-plugin-admob-simple/blob/a58846c1ea14188a4aef44381ccd28ffdcae3bfa/src/android/AdMob.java#L207)  | ✅                                                                                                                                                                                                           | [❌](https://github.com/sunnycupertino/cordova-plugin-admob-simple/blob/f7cc64e9e018f2146b2735b5ae8d3b780fa24f72/src/android/AdMob.java#L728) |\n| [cordova-plugin-admobpro](https://github.com/floatinghotpot/cordova-admob-pro)               | [❌](https://github.com/floatinghotpot/cordova-admob-pro/wiki/License-Agreement#2-win-win-partnership)                                         | [❌](https://github.com/floatinghotpot/cordova-extension/blob/master/src/android/cordova-generic-ad.jar) [❌](https://github.com/floatinghotpot/cordova-extension/blob/master/src/ios/libCordovaGenericAd.a) | [❌](https://github.com/floatinghotpot/cordova-admob-pro/issues/326) [❌](https://github.com/floatinghotpot/cordova-admob-pro/issues/450)     |\n\nClick ❌ to see the detail.\n\n## Installation\n\n```sh\ncordova plugin add cordova-plugin-admob-free --save\n```\n\nNote that `cordova plugin add [GIT_URL]` is not supported.\n\n## Usage\n\n### 1. Create Ad Unit ID for your banner and interstitial.\n\nGo to the [AdMob portal](https://www.google.com/admob/) and add your app (if you haven't done so already), once your app is added to your AdMob account, create a new ad unit for it.\n\n### 2. Display advertisements\n\n#### [Banner Ad](https://ratson.github.io/cordova-plugin-admob-free/variable/index.html#static-variable-banner)\n\n#### [Interstitial Ad](https://ratson.github.io/cordova-plugin-admob-free/variable/index.html#static-variable-interstitial)\n\n#### [Reward Video Ad](https://ratson.github.io/cordova-plugin-admob-free/variable/index.html#static-variable-rewardvideo)\n\n### 3. Profit\n\nIf you find this plugin useful, please [star it on Github](https://github.com/ratson/cordova-plugin-admob-free).\n\n## Screenshots\n\n| Android Banner                           | Android Interstitial                           |\n| ---------------------------------------- | ---------------------------------------------- |\n| ![ScreenShot][banner-android-screenshot] | ![ScreenShot][interstitial-android-screenshot] |\n\n| iOS Banner                           | iOS Interstitial                           |\n| ------------------------------------ | ------------------------------------------ |\n| ![ScreenShot][banner-ios-screenshot] | ![ScreenShot][interstitial-ios-screenshot] |\n\n[banner-android-screenshot]: docs/screenshots/banner-android.jpg\n[banner-ios-screenshot]: docs/screenshots/banner-ios.jpg\n[interstitial-android-screenshot]: docs/screenshots/interstitial-android.jpg\n[interstitial-ios-screenshot]: docs/screenshots/interstitial-ios.jpg\n\n## API\n\nSee [documentation page](https://ratson.github.io/cordova-plugin-admob-free/identifiers.html).\n\n## Customize Google Play Services versions (Android only)\n\nThe default `PLAY_SERVICES_VERSION` is set to `11.0.4`.\nIf you need a different version, edit `config.xml` with following,\n\n```xml\n<plugin name=\"cordova-admob-sdk\" spec=\"~0.13.1\">\n    <variable name=\"PLAY_SERVICES_VERSION\" value=\"11.6.0\" />\n</plugin>\n```\n\n## Status\n\nThis plugin is forked from [cordova-plugin-admob-simple](https://github.com/sunnycupertino/cordova-plugin-admob-simple) and removed the ad-sharing related code.\n\nThe code for Android has almost all rewritten to be more maintainable, plus some extra features.\n\nFor iOS, while it is working, I have less interest in writing Objective-C code these days. If someone is willing to help, feel free to send a pull request, I will review it.\n\n## Contributing\n\nYou can use this Cordova plugin for free. You can contribute to this project in many ways:\n\n* [Reporting issues](https://github.com/ratson/cordova-plugin-admob-free/issues).\n* Patching and bug fixing, especially when submitted with test code. [Open a pull request](https://github.com/ratson/cordova-plugin-admob-free/pulls).\n* Other enhancements.\n\nHelp with documentation is always appreciated and can be done via pull requests.\n\nRead [Contributing Guide](https://ratson.github.io/cordova-plugin-admob-free/manual/tutorial.html#contributing-guide) to learn how to contribute.\n\n### Ionic Support\n\nWhile the Ionic community have provided [an Ionic Native Plugin](https://ionicframework.com/docs/native/admob-free/), plugin users need more examples and tutorials.\n\nAs I ([@ratson](https://github.com/ratson)) don't use Ionic myself, it would be great if some experienced Ionic developers could help answering questions or come up with more examples. HELP WANTED HERE.\n\n## Credits\n\nThanks for the [cordova-plugin-admob-simple](https://github.com/sunnycupertino/cordova-plugin-admob-simple) author for forking the original project [cordova-plugin-admob](https://github.com/floatinghotpot/cordova-plugin-admob) to [make it functional](https://github.com/sunnycupertino/cordova-plugin-admob-simple/issues/1) and open source it.\n\nScreenshots are copied from [cordova-admob-pro](https://github.com/floatinghotpot/cordova-admob-pro).\n\n## Disclaimer\n\nThis is NOT an official Google product. It is just a community-driven project, which use the Google AdMob SDKs.\n\n## License\n\n[MIT](LICENSE)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratson/cordova-plugin-admob-free.git"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup -c -o www/admob.js",
+    "clean": "rimraf coverage dist www",
+    "docs": "run-s docs:*",
+    "docs-watch": "nodemon -w src --exec 'npm run docs'",
+    "docs:commit": "cd gh-pages && git add -A . && git commit -a -m 'Update page'",
+    "docs:esdoc": "esdoc -c esdoc.json",
+    "lint": "run-p lint:*",
+    "lint:js": "eslint --ext js,md .",
+    "lint:spaces": "lintspaces -n -t -d spaces *.* src/**/*.* tests/**/*.* examples/*/*.* examples/*/www/*.*",
+    "postpublish": "run-s docs",
+    "prepublish": "run-s clean build",
+    "pretest": "cross-env BABEL_ENV=test run-s build",
+    "test": "run-p test:* lint:*",
+    "test:cordova": "cordova-test",
+    "test:js": "jest",
+    "version": "sync-package-version --cordova-plugin"
+  },
+  "tonicExampleFilename": "test.js",
+  "version": "0.13.0"
+}
